@@ -10,7 +10,7 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class Validator {
 
-  public static boolean validateTimestamp(long timestamp, long duration) {
-    return Instant.now().toEpochMilli() - timestamp < duration * 1000;
+  public static boolean isValidTimestamp(long timestamp, long duration) {
+    return Instant.now().toEpochMilli() - timestamp <= duration * 1000;
   }
 }

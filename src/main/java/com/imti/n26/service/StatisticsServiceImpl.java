@@ -29,7 +29,7 @@ public class StatisticsServiceImpl implements StatisticsService {
   public Statistics calculateStatistics() {
     //Map<Long, Double> transactions = transactionService.findTransactions();
     return Statistics.from(transactionService.findTransactions().entrySet().stream()
-        .filter(longDoubleEntry -> Validator.validateTimestamp(longDoubleEntry.getKey(),duration))
+        .filter(longDoubleEntry -> Validator.isValidTimestamp(longDoubleEntry.getKey(),duration))
         .mapToDouble(Entry::getValue).summaryStatistics());
   }
 }

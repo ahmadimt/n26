@@ -22,7 +22,7 @@ public class TransactionServiceImpl implements TransactionService {
   @Override
   public boolean saveTransaction(Transaction transaction) {
     boolean flag = false;
-    if (Validator.validateTimestamp(transaction.getTimestamp(), duration)) {
+    if (Validator.isValidTimestamp(transaction.getTimestamp(), duration)) {
       transactions.put(transaction.getTimestamp(), transaction.getAmount());
       flag = true;
     }

@@ -2,7 +2,6 @@ package com.imti.n26.controller;
 
 import com.imti.n26.model.Transaction;
 import com.imti.n26.service.TransactionService;
-import java.time.Instant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -33,12 +32,10 @@ public class TransactionController {
   @PostMapping(value = "/transactions", produces = MediaType.APPLICATION_JSON_VALUE)
   public ResponseEntity transactions(@RequestBody Transaction transaction) {
     ResponseEntity responseEntity;
-    System.out.println(Instant.now().toEpochMilli());
-    if (Instant.now().toEpochMilli() - transaction.getTimestamp() > duration * 1000) {
-      responseEntity = new ResponseEntity(HttpStatus.NO_CONTENT);
-    } else {
-      transactionService.saveTransaction(transaction);
+    if (transactionService.saveTransaction(transaction)) {
       responseEntity = new ResponseEntity(HttpStatus.CREATED);
+    } else {
+      responseEntity = new ResponseEntity(HttpStatus.NO_CONTENT);
     }
     return responseEntity;
   }
