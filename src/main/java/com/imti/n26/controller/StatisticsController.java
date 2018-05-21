@@ -2,7 +2,6 @@ package com.imti.n26.controller;
 
 import com.imti.n26.dtos.Statistics;
 import com.imti.n26.service.StatisticsService;
-import java.util.DoubleSummaryStatistics;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

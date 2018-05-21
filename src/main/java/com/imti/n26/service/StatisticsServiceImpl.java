@@ -2,9 +2,6 @@ package com.imti.n26.service;
 
 import com.imti.n26.dtos.Statistics;
 import com.imti.n26.utils.Validator;
-import java.time.Instant;
-import java.util.DoubleSummaryStatistics;
-import java.util.Map;
 import java.util.Map.Entry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

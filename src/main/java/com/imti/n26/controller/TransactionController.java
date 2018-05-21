@@ -3,7 +3,6 @@ package com.imti.n26.controller;
 import com.imti.n26.model.Transaction;
 import com.imti.n26.service.TransactionService;
 import java.time.Instant;
-import java.util.Objects;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;

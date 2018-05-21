@@ -2,7 +2,6 @@ package com.imti.n26.service;
 
 import com.imti.n26.model.Transaction;
 import com.imti.n26.utils.Validator;
-import java.time.Instant;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import org.springframework.beans.factory.annotation.Value;
