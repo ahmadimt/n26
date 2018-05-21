@@ -3,6 +3,12 @@
 ## Getting the code
  The code can be downloaded or cloned from `https://github.com/ahmadimt/n26.git`
 
+## Tech Stack
+1. Java
+2. Spring Boot
+3. Gradle (Dependency management and build tool)
+
+
 ## Building the application
 Once downloaded/cloned, please navigate to project directory. It is a Gradle project. for building the code, run following command from the root directory of the project
 
