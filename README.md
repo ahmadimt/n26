@@ -12,11 +12,17 @@
 ## Building the application
 Once downloaded/cloned, please navigate to project directory. It is a Gradle project. for building the code, run following command from the root directory of the project
 
-If Gradle is not installed in the local machine:
-```./gradlew clean install```
+If Gradle is NOT installed in the local machine:
+```
+//On linux/Mac machine
+./gradlew clean build
+
+//On Windows machine
+gradlew.bat clean build
+```
 
 If Gradle is installed in the local machine:
- `gradle clean install`
+ `gradle clean build`
 
 please wait for application to build.
 
