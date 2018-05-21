@@ -33,6 +33,6 @@ Swagger is configured in the application for testing purpose and can be accessed
 
 `http://localhost:8080/swagger-ui.html#/`
 
-Once open we can see two controllers:
+Once open we can see two endpoints:
 
 ![alt text](https://github.com/ahmadimt/n26/blob/master/images/endpoints.png "endpoints")
